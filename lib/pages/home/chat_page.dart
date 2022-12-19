@@ -96,11 +96,9 @@ class ChatPage extends StatelessWidget {
             padding: EdgeInsets.symmetric(
               horizontal: defaultMargin,
             ),
-            children: cartProvider.carts
-                .map(
-                  (cart) => CartCard(cart),
-                )
-                .toList(),
+            children: [
+              ChatTile(),
+            ],
           ),
         ),
       );

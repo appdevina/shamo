@@ -66,7 +66,7 @@ class ProductCart extends StatelessWidget {
                     height: 6,
                   ),
                   Text(
-                    product.name,
+                    product.name ?? 'Nama produk',
                     style: blackTextStyle.copyWith(
                       fontSize: 18,
                       fontWeight: semiBold,

@@ -3,7 +3,7 @@ import 'package:shamo/models/gallery_model.dart';
 
 class ProductModel {
   int? id;
-  late String name;
+  String? name;
   double? price;
   String? description;
   String? tags;
@@ -14,7 +14,7 @@ class ProductModel {
 
   ProductModel({
     this.id,
-    required this.name,
+    this.name,
     this.price,
     this.description,
     this.tags,
@@ -53,3 +53,5 @@ class ProductModel {
     };
   }
 }
+
+class UninitializedProductModel extends ProductModel {}

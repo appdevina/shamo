@@ -44,7 +44,7 @@ class WishlistCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  product.name,
+                  product.name ?? 'Nama produk',
                   style: primaryTextStyle.copyWith(
                     fontWeight: semiBold,
                   ),
