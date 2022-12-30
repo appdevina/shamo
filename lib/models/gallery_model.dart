@@ -15,7 +15,7 @@ class GalleryModel {
   Map<String, dynamic> toJson() {
     return {
       'id': id,
-      'name': url,
+      'url': url,
     };
   }
 }
